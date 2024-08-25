@@ -23,7 +23,7 @@ function App() {
       <Router>
         <CssBaseline />
         <AppHeader />
-        <SideDrawer />
+        {/* <SideDrawer /> */}
         <Content />
         <Assistant />
       </Router>
