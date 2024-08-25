@@ -11,6 +11,7 @@ import Calendar from '../Pages/Calendar';
   const StyledContent = styled('main')(({ theme }) => ({
     flexGrow: 1,
     padding: theme.spacing(3),
+    paddingTop: 0,
     backgroundColor: '#f9f9f9', // Very light grey background
   }));
   

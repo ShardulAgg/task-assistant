@@ -21,7 +21,7 @@ const Assistant: FC<ThreadConfig> = (config) => {
         <div style={{width:600}}>
 <AssistantRuntimeProvider runtime={runtime}>
     <Thread.Root config={config}>
-        <Thread.Viewport style={{ display: 'flex', flexDirection: 'column', height: 'calc(100vh - 50px)', marginTop: '50px' }}>
+        <Thread.Viewport style={{ display: 'flex', flexDirection: 'column', height: 'calc(100vh - 0px)', marginTop: '0px' }}>
             <div style={{ flex: 1, overflowY: 'auto' }}>
                 <ThreadWelcome />
                 <Thread.Messages />

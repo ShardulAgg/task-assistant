@@ -22,7 +22,7 @@ function App() {
     <Root>
       <Router>
         <CssBaseline />
-        <AppHeader />
+        {/* <AppHeader /> */}
         {/* <SideDrawer /> */}
         <Content />
         <Assistant />
