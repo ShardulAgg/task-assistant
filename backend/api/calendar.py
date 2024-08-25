@@ -5,6 +5,8 @@ calendar_router = APIRouter()
 
 @calendar_router.get("/")
 def fetch_calendar():
-    
-    
-    return {"status": "ok"}
+    return {"message": "Calendar service is running"}
+
+@calendar_router.post("/date")
+def fetch_events(date: str):
+    return f"Events for {date}"
