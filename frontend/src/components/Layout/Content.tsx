@@ -7,7 +7,7 @@ import {
   
 import DailySchedule from '../Pages/List';
 import Calendar from '../Pages/Calendar';
-
+import Scheduler from '../Pages/Scheduler/Scheduler';
   const StyledContent = styled('main')(({ theme }) => ({
     flexGrow: 1,
     padding: theme.spacing(3),
@@ -28,7 +28,7 @@ import Calendar from '../Pages/Calendar';
       <StyledContent>
         <Toolbar />
         <Routes>
-          <Route path="/" element={<DailySchedule />} />
+          <Route path="/" element={<Scheduler />} />
           <Route path="/calendar" element={<Calendar />} />
         </Routes>
       </StyledContent>
