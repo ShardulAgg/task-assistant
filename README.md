@@ -13,13 +13,11 @@ Key Features:
 
 This project leverages several cutting-edge technologies to provide a robust and user-friendly experience:
 
-1. **mem0**: An advanced memory management system that enhances the AI assistant's ability to remember context and provide more personalized responses.
+1. **Assistant-UI**: A powerful UI framework designed specifically for AI assistants, providing intuitive interfaces for user-AI interactions.
 
-2. **Assistant-UI**: A powerful UI framework designed specifically for AI assistants, providing intuitive interfaces for user-AI interactions.
+2. **MUI (Material-UI)**: A popular React UI framework that offers a comprehensive suite of UI tools and pre-built components, ensuring a sleek and responsive design.
 
-3. **MUI (Material-UI)**: A popular React UI framework that offers a comprehensive suite of UI tools and pre-built components, ensuring a sleek and responsive design.
-
-4. **FastAPI**: A modern, fast (high-performance) web framework for building APIs with Python 3.6+ based on standard Python type hints.
+3. **FastAPI**: A modern, fast (high-performance) web framework for building APIs with Python 3.6+ based on standard Python type hints.
 
 ## Getting Started
 

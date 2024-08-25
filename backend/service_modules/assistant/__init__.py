@@ -1,35 +1,40 @@
-from googleapiclient.discovery import build
-from google.oauth2.credentials import Credentials
+from .calendar import cal
+
+
+tools = [
+    {
+        "type": "function",
+        "function": {
+            "name": "get_delivery_date",
+            "description": "Get the delivery date for a customer's order. Call this whenever you need to know the delivery date, for example when a customer asks 'Where is my package'",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "order_id": {
+                        "type": "string",
+                        "description": "The customer's order ID.",
+                    },
+                },
+                "required": ["order_id"],
+                "additionalProperties": False,
+            },
+        }
+    }
+]
+
+messages = [
+    {"role": "system", "content": "You are a helpful customer support assistant. Use the supplied tools to assist the user."},
+    {"role": "user", "content": "Hi, can you tell me the delivery date for my order?"}
+]
+
+
+
 
 async def chat(user_message: str):
     return "Welcome to the chat assistant! Type 'help' for a list of commands."
 
-
-async def create_event(event_name: str, date_time: str, token: str):
-    credentials = Credentials(token)
-    service = build('calendar', 'v3', credentials=credentials)
+async def function_calling(message: str, history: list, session_id: str):
     
-    event = {
-        'summary': event_name,
-        'start': {
-            'dateTime': date_time,
-            'timeZone': 'UTC',
-        },
-        'end': {
-            'dateTime': date_time,  # You might want to add duration logic
-            'timeZone': 'UTC',
-        },
-        'location': 'Conference Room',
-    }
-    
-    created_event = await service.events().insert(calendarId='primary', body=event).execute()
-    
-    return {
-        "event_name": created_event['summary'],
-        "start_date": created_event['start']['dateTime'],
-        "event_type": "Meeting",
-        "location": created_event['location']
-    }
+    return '0'
 
-
-__all__ = ["chat"]
+__all__ = ["chat", "cal"]
