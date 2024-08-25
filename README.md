@@ -1,3 +1,23 @@
+# Personal Task Manager with AI Assistant
+
+## Project Summary
+
+This application is a comprehensive personal task management tool that allows users to create, manage, and sync tasks with their Google Calendar. It features a React frontend for user interaction and task visualization, coupled with a FastAPI backend that interfaces with a database and integrates with Google Calendar API.
+
+Key Features:
+- Create and manage personal tasks
+- Sync tasks with Google Calendar
+- AI-powered assistant for task prioritization and rescheduling
+
+## Getting Started
+
+To get started with the Personal Task Manager, follow these steps:
+
+1. Clone the repository and navigate to the project root.
+2. Set up the frontend:
+   cd frontend
+   npm install
+   npm start
 3. Access the app at `http://localhost:3000`.
 
 ## Using the App
