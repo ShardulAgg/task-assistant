@@ -2,7 +2,7 @@ from googleapiclient.discovery import build
 from google.oauth2.credentials import Credentials
 
 class Calendar:
-    def __init__():
+    def __init__(self):
         pass
     
     async def create_event(event_name: str, date_time: str, token: str):
