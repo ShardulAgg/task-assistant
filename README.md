@@ -1,5 +1,8 @@
 # Personal Task Manager with AI Assistant
 
+### Note
+This is a weekend project and not meant to be commercialized. Feel free to clone and use it for your own projects. Drop me an email at shardul@convosearch.com for any commercialization permissions.
+
 ## Project Summary
 
 This application is a comprehensive personal task management tool that allows users to create, manage, and sync tasks with their Google Calendar. It features a React frontend for user interaction and task visualization, coupled with a FastAPI backend that interfaces with a database and integrates with Google Calendar API.
